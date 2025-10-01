@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --base-blue: #0052FF;
+  --base-light-blue: #0066FF;
+  --base-dark-blue: #0040CC;
+  --base-accent: #00D4FF;
+}
+
+body {
+  background: linear-gradient(180deg, #0A0B0D 0%, #050608 100%);
+  color: white;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.glass {
+  background: rgba(0, 82, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 82, 255, 0.2);
+}
+
+.glow {
+  box-shadow: 0 0 20px rgba(0, 82, 255, 0.5);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #0052FF 0%, #00D4FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
